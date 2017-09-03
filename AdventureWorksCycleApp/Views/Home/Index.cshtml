@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+
+    @model List<TopSales>
+}
+
+    <div class="row">
+        <div class="col-md-1 text-right"><h4>Totals</h4></div>
+        <div class="col-md-8"><h4>Name</h4></div>
+        <div class="col-md-3 text-right"><h4>ProductID</h4></div>
+    </div>
+    <hr/>
+
+    @foreach(var sale in Model) {
+    <div class="row">
+        <div class="col-md-1 text-right">@sale.Totals</div>
+        <div class="col-md-8">@sale.Name</div>
+        <div class="col-md-3 text-right">@sale.ProductID</div>
+    </div>    
+    }

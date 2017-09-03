@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Adventure Works Cycle</title>
+        <meta name="description" content="Adventure Works Cycle">
+        <meta name="author" content="Leonardo Vallejos">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron" style="padding: 20px !important;">
+                <h1 class="text-center">Adventure Works Cycle</h1>
+                <h3 class="text-center">Welcome to the Database web app</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11">
+                    <a href="/" class="btn btn-outline-primary">Top 10 Sales Order Details</a>
+                </div>
+                <div class="col-md-1">
+                    <a href="/home/About" class="btn btn-outline-primary">About</a>
+                </div>
+            </div>
+
+            <hr style="padding: 10px;" />
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    @RenderBody()
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <hr style="padding: 10px;" />
+
+            <div class="footer">
+                <p>By Leonardo Vallejos - 2017</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+
+</html>
